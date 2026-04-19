@@ -76,16 +76,3 @@ cd ../F1-frontend
 npm run dev
 ```
 
-## Deployment Notes
-
-The frontend and Next.js API can be deployed to Vercel or similar platforms. The FastAPI embedding service should be deployed separately, then configured through `EMBEDDING_API_URL`.
-
-Before deployment, update the backend to read the embedding URL from the environment instead of hardcoding `http://127.0.0.1:8000`.
-
-## Roadmap
-
-- Show retrieved source links in chatbot responses.
-- Add `/health` endpoint for the embedding service.
-- Add production-ready environment validation.
-- Add CI checks for linting and builds.
-- Improve data ingestion with cleaner F1-specific sources.
